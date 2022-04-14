@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dz303241.github.io</id>
     <title>Gridea</title>
-    <updated>2022-04-14T11:56:13.982Z</updated>
+    <updated>2022-04-14T12:52:40.263Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dz303241.github.io"/>
     <link rel="self" href="https://dz303241.github.io/atom.xml"/>
@@ -16,7 +16,7 @@
         <link href="https://dz303241.github.io/post/auto-save-version-control-and-recovery/">
         </link>
         <updated>2022-04-14T11:03:57.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="auto-save-version-control-and-recovery">Auto Save, Version Control and Recovery</h1>
+        <content type="html"><![CDATA[<p><img src="https://dz303241.github.io/post-images/1649940676984.png" alt="" loading="lazy"># Auto Save, Version Control and Recovery</p>
 <h2 id="macos">macOS</h2>
 <p>On macOS, the operation system will schedule auto save operation for document-based apps, like Typora or TextEdit. So &quot;auto-save&quot; is always enabled as a system feature.</p>
 <figure data-type="image" tabindex="1"><img src="img/general.png" alt="general" loading="lazy"></figure>
