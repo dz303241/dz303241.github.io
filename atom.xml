@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dz303241.github.io</id>
     <title>Gridea</title>
-    <updated>2022-04-14T09:45:32.823Z</updated>
+    <updated>2022-04-14T11:04:43.917Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dz303241.github.io"/>
     <link rel="self" href="https://dz303241.github.io/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://dz303241.github.io/images/avatar.png</logo>
     <icon>https://dz303241.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Auto Save, Version Control and Recovery]]></title>
+        <id>https://dz303241.github.io/post/auto-save-version-control-and-recovery/</id>
+        <link href="https://dz303241.github.io/post/auto-save-version-control-and-recovery/">
+        </link>
+        <updated>2022-04-14T11:03:57.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="auto-save-version-control-and-recovery">Auto Save, Version Control and Recovery</h1>
+<h2 id="macos">macOS</h2>
+<p>On macOS, the operation system will schedule auto save operation for document-based apps, like Typora or TextEdit. So &quot;auto-save&quot; is always enabled as a system feature.</p>
+<figure data-type="image" tabindex="1"><img src="img/general.png" alt="general" loading="lazy"></figure>
+<p>If you want Typora to auto save content when quit or close, without popping up a confirm dialog, please <strong>uncheck</strong> the checkbox one.</p>
+<p>If you want Typora to restore all windows/documents when restart, please <strong>uncheck</strong> the checkbox two.</p>
+<h2 id="windowslinux">Windows/Linux</h2>
+<figure data-type="image" tabindex="2"><img src="img/Snip20161027_2.png" alt="Snip20161027_2" loading="lazy"></figure>
+<p>You could enable this feature on preferences panel.</p>
+<p>By default, the documents will be saved every 5 minutes.</p>
+<p>If you want to change the time interval, please click &quot;Open Advanced Settings&quot; button on preferences panel, which would pop up a folder named <code>conf</code>, then edit or create a file named <code>conf.user.json</code>, and modify/add following setting:</p>
+<pre><code class="language-json">{
+  &quot;autoSaveTimer&quot;: 5 // Double, default is 5. The unit is &quot;minute&quot;
+}
+</code></pre>
+<h3 id="recover-unsaved-drafts-windowslinux">Recover Unsaved Drafts (Windows/Linux)</h3>
+<p>No matter whether the &quot;auto-save&quot; option is enabled or not, if Typora exit or crashed without saving file, or you accidentally quite Typora without saving your writings, you could click the &quot;Recover Unsaved Drafts&quot; button to found some writing drafts auto saved by Typora.</p>
+<p>The filename of those backed-up drafts is like <code>{date}-{filename}.md</code>, if your content is newly created without a file path (which is, &quot;Untitled&quot;), the <code>{filename}</code> part is auto generated, which is usually the first heading or first sentence. You could find and copy out the corresponding backup file to retrieve some part of your writings.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://dz303241.github.io/post/hello-gridea/</id>
