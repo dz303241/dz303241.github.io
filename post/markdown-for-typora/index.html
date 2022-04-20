@@ -1,22 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://dz303241.github.io</id>
-    <title>Gridea</title>
-    <updated>2022-04-20T13:02:16.226Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://dz303241.github.io"/>
-    <link rel="self" href="https://dz303241.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://dz303241.github.io/images/avatar.png</logo>
-    <icon>https://dz303241.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2022, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[Markdown For Typora]]></title>
-        <id>https://dz303241.github.io/post/markdown-for-typora/</id>
-        <link href="https://dz303241.github.io/post/markdown-for-typora/">
-        </link>
-        <updated>2022-04-20T13:01:37.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="markdown-for-typora">Markdown For Typora</h1>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>Markdown For Typora | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://dz303241.github.io/favicon.ico?v=1650459733384">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://dz303241.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://dz303241.github.io">
+        <img class="avatar" src="https://dz303241.github.io/images/avatar.png?v=1650459733384" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://dz303241.github.io">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Markdown For Typora</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2022-04-20</span>
+            
+          </div>
+          <div class="post-content">
+            <h1 id="markdown-for-typora">Markdown For Typora</h1>
 <h2 id="overview">Overview</h2>
 <p><strong>Markdown</strong> is created by <a href="http://daringfireball.net/">Daring Fireball</a>; the original guideline is <a href="http://daringfireball.net/projects/markdown/syntax">here</a>. Its syntax, however, varies between different parsers or editors. <strong>Typora</strong> is using <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub Flavored Markdown</a>.</p>
 <p>[toc]</p>
@@ -255,64 +325,58 @@ __double underscores__
 </li>
 </ol>
 </section>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Auto Save, Version Control and Recovery]]></title>
-        <id>https://dz303241.github.io/post/auto-save-version-control-and-recovery/</id>
-        <link href="https://dz303241.github.io/post/auto-save-version-control-and-recovery/">
-        </link>
-        <updated>2022-04-14T11:03:57.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://dz303241.github.io/post-images/1649940676984.png" alt="" loading="lazy"># Auto Save, Version Control and Recovery</p>
-<h2 id="macos">macOS</h2>
-<p>On macOS, the operation system will schedule auto save operation for document-based apps, like Typora or TextEdit. So &quot;auto-save&quot; is always enabled as a system feature.</p>
-<figure data-type="image" tabindex="1"><img src="img/general.png" alt="general" loading="lazy"></figure>
-<p>If you want Typora to auto save content when quit or close, without popping up a confirm dialog, please <strong>uncheck</strong> the checkbox one.</p>
-<p>If you want Typora to restore all windows/documents when restart, please <strong>uncheck</strong> the checkbox two.</p>
-<h2 id="windowslinux">Windows/Linux</h2>
-<figure data-type="image" tabindex="2"><img src="img/Snip20161027_2.png" alt="Snip20161027_2" loading="lazy"></figure>
-<p>You could enable this feature on preferences panel.</p>
-<p>By default, the documents will be saved every 5 minutes.</p>
-<p>If you want to change the time interval, please click &quot;Open Advanced Settings&quot; button on preferences panel, which would pop up a folder named <code>conf</code>, then edit or create a file named <code>conf.user.json</code>, and modify/add following setting:</p>
-<pre><code class="language-json">{
-  &quot;autoSaveTimer&quot;: 5 // Double, default is 5. The unit is &quot;minute&quot;
-}
-</code></pre>
-<h3 id="recover-unsaved-drafts-windowslinux">Recover Unsaved Drafts (Windows/Linux)</h3>
-<p>No matter whether the &quot;auto-save&quot; option is enabled or not, if Typora exit or crashed without saving file, or you accidentally quite Typora without saving your writings, you could click the &quot;Recover Unsaved Drafts&quot; button to found some writing drafts auto saved by Typora.</p>
-<p>The filename of those backed-up drafts is like <code>{date}-{filename}.md</code>, if your content is newly created without a file path (which is, &quot;Untitled&quot;), the <code>{filename}</code> part is auto generated, which is usually the first heading or first sentence. You could find and copy out the corresponding backup file to retrieve some part of your writings.</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://dz303241.github.io/post/hello-gridea/</id>
-        <link href="https://dz303241.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-</feed>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://dz303241.github.io/post/auto-save-version-control-and-recovery/">
+              <h3 class="post-title">
+                下一篇：Auto Save, Version Control and Recovery
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://dz303241.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
